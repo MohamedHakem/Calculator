@@ -14,7 +14,7 @@ function sbm_form() {
 	  if( digit % 2!= 0){
 		console.log(digit + " is not Even , going to work on it !");
 	  }
-	  elseif(i==nOfDigits-1){
+	  else if(i==nOfDigits-1){
 
 	  }
 }
