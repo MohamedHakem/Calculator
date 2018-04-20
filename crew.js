@@ -2,15 +2,25 @@
 javascript for Calculator
 */
 function sbm_form() {
-	input_number = document.getElementById('number').value;
-	if (input_number == "") {
+	nn = document.getElementById('number').value;
+	if (nn == "") {
         	alert("Please Insert Number");
         	return false;
     	}
   	//Sabri Code
-	alert(input_number);
+	for(var i=1; i<= noOfDigits;  i++ ){
+		
+	    digit=number/Math.pow(10, noOfDigits-i);
+	  if( digit % 2!= 0){
+		console.log(digit + " is not Even , going to work on it !");
+	  }
+	  elseif(i==nOfDigits-1){
+
+	  }
+}
+	alert(nn);
   	var resultdiv = document.getElementById("result");
-  	resultdiv.innerText = input_number;
+  	resultdiv.innerText = nn;
 }
 
 /*
