@@ -4,7 +4,7 @@ javascript for Calculator
 function sbm_form() {
 	input_number = document.getElementById('number').value;
 	//eman function
-	if(!isdigit(input_number)){
+	if(!isNotDigit(input_number)){
 		alert(iseven(input_number)+"presses");
 		alert(input_number);
   		var resultdiv = document.getElementById("result");
@@ -26,7 +26,7 @@ function iseven(input_number){
 			largerEven=digit + 1 * Math.pow(10, noOfDigits-i);
 			smallerEven=digit - 1 * Math.pow(10, noOfDigits-i)+parseInt('8'*noOfDigits-i);
 			if(digit%10!=9){
-				return min(largerEven, smallerEven);
+				return Math.min(largerEven, smallerEven);
 			}
 			return smallerEven;
 	  	}
@@ -39,7 +39,7 @@ function iseven(input_number){
 	  	}
 	}
 }
-function isdigit(input_number){
+function isNotDigit(input_number){
 	if (isNaN(input_number)|| input_number == "") {
         	alert("Please Insert Number");
         	return false;
