@@ -2,13 +2,16 @@
 <html>
   <head>
     <title>Calculator</title>
-    <script type="text/javascript" src="crew.js"></script>
+
   </head>
   <body>
-  <form>
-
-    <input type="text" id="number" placeholder="please insert your number" style="width:300px;"   size="6"> 
+  <form id="calc">
+    <label for="number">Please insert your number:</label>
+    <input type="text" id="number" placeholder="please insert your number" style="width:300px;"  required size="6">
+    <input type="button" value="Submit" onclick="sbm_form();">
   </form>
-
+  <div id="result">
+  </div>
+  <script type="text/javascript" src="js.js"></script>
   </body>
 </html>
