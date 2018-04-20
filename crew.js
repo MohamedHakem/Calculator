@@ -8,6 +8,7 @@ function sbm_form() {
         	return false;
     	}
   	//Sabri Code
+function isEven(){ 
 	for(var i=1; i<= noOfDigits;  i++ ){
 		
 	    digit=number/Math.pow(10, noOfDigits-i);
@@ -17,6 +18,7 @@ function sbm_form() {
 	  elseif(i==nOfDigits-1){
 
 	  }
+}
 }
 	alert(nn);
   	var resultdiv = document.getElementById("result");
