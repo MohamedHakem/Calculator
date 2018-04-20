@@ -23,8 +23,19 @@ function iseven(input_number){
 		if( digit % 2!= 0){
 			console.log(digit + " is not Even , going to work on it !");
 			alert(digit + " is not Even , going to work on it !");
-	  	}else if(i==noOfDigits-1){
-
+			largerEven=digit + 1 * Math.pow(10, noOfDigits-i);
+			smallerEven=digit - 1 * Math.pow(10, noOfDigits-i)+parseInt('8'*noOfDigits-i);
+			if(digit%10!=9){
+				return min(largerEven, smallerEven);
+			}
+			return smallerEven;
+	  	}
+		else if(i==noOfDigits-1){
+			if (input_number%2==0){
+				console.log(digit + " is Even");
+				return 0;
+			}
+			return 1;
 	  	}
 	}
 }
@@ -36,7 +47,16 @@ function isdigit(input_number){
 }
 /*
 var number = document.getElementById("number").value;
-
+if( digit % 2!= 0){
+			console.log(digit + " is not Even , going to work on it !");
+			alert(digit + " is not Even , going to work on it !");
+			
+	  	}
+		else if(i==noOfDigits-1){
+			if (input_number%2==0){
+				console.log(digit + " is Even");
+			}
+	  	}
 
 var noOfDigits = number.toString().length;
 
