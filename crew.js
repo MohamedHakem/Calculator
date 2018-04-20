@@ -8,8 +8,9 @@ function sbm_form() {
         	return false;
     	}
 	//eman function
-	isdigit(input_number);
+	if(isdigit(input_number)){
 	iseven(input_number);
+	}
 	
 //end of sabri code
 	alert(input_number);
