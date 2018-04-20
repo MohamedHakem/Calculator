@@ -3,19 +3,16 @@ javascript for Calculator
 */
 function sbm_form() {
 	input_number = document.getElementById('number').value;
-	if (input_number == "") {
-        	alert("Please Insert Number");
-        	return false;
-    	}
 	//eman function
 	if(isdigit(input_number)){
 		iseven(input_number);
+		alert(input_number);
+  		var resultdiv = document.getElementById("result");
+  		resultdiv.innerText = input_number;
 	}
 	
 //end of sabri code
-	alert(input_number);
-  	var resultdiv = document.getElementById("result");
-  	resultdiv.innerText = input_number;
+	
 }
 function iseven(input_number){
 	var noOfDigits = input_number.toString().length;
@@ -32,7 +29,7 @@ function iseven(input_number){
 	}
 }
 function isdigit(input_number){
-	if (isNaN(input_number)) {
+	if (isNaN(input_number)|| input_number == "") {
         	alert("Please Insert Number");
         	return false;
     	}
