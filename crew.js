@@ -2,15 +2,15 @@
 javascript for Calculator
 */
 function sbm_form() {
-	nn = document.getElementById('number').value;
-	if (nn == "") {
+	input_number = document.getElementById('number').value;
+	if (input_number == "") {
         	alert("Please Insert Number");
         	return false;
     	}
   	//Sabri Code
-	alert(nn);
+	alert(input_number);
   	var resultdiv = document.getElementById("result");
-  	resultdiv.innerText = nn;
+  	resultdiv.innerText = input_number;
 }
 
 /*
