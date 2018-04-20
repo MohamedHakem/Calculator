@@ -31,6 +31,10 @@ function iseven(input_number){
 	}
 }
 function isdigit(input_number){
+	if (!input_number.Integer) {
+        	alert("Please Insert Number");
+        	return false;
+    	}
 }
 /*
 var number = document.getElementById("number").value;
