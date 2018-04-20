@@ -4,7 +4,7 @@ javascript for Calculator
 function sbm_form() {
 	input_number = document.getElementById('number').value;
 	//eman function
-	if(isdigit(input_number)){
+	if(!isdigit(input_number)){
 		alert(iseven(input_number)+"presses");
 		alert(input_number);
   		var resultdiv = document.getElementById("result");
