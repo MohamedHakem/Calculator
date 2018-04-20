@@ -32,7 +32,7 @@ function iseven(input_number){
 	}
 }
 function isdigit(input_number){
-	if (!isNaN(input_number)) {
+	if (isNaN(input_number)) {
         	alert("Please Insert Number");
         	return false;
     	}
