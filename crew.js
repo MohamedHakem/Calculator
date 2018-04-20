@@ -26,7 +26,7 @@ function iseven(input_number){
 			largerEven=(digit + 1) * Math.pow(10, noOfDigits-i);
 			smallerEven=(digit - 1) * Math.pow(10, noOfDigits-i)+parseInt('8'*noOfDigits-i);
 			if(digit%10!=9){
-				return Math.min(largerEven-input_number, input_number-smallerEven);
+				return Math.min(largerEven-input_number, smallerEven-input_number);
 			}
 			return smallerEven;
 	  	}
