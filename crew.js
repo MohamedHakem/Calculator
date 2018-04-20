@@ -7,6 +7,8 @@ function sbm_form() {
         	alert("Please Insert Number");
         	return false;
     	}
+	//eman function
+	isdigit(input_number);
 	iseven(input_number);
 	
 //end of sabri code
@@ -27,6 +29,8 @@ function iseven(input_number){
 
 	  	}
 	}
+}
+function isdigit(input_number){
 }
 /*
 var number = document.getElementById("number").value;
