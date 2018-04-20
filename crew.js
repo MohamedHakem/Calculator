@@ -1,3 +1,16 @@
+/*
+javascript for Calculator
+*/
+//alert("Hi");
+function sbm_form() {
+  //num = $("#number").val();
+  nn = document.getElementById('number').value;
+  alert(nn);
+  var resultdiv = document.getElementById("result");
+  resultdiv.innerText = nn;
+}
+
+
 var number = document.getElementById("number").value;
 
 
