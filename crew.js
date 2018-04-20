@@ -25,7 +25,7 @@ function iseven(input_number){
 			alert(digit + " is not Even , going to work on it !");
 			largerEven=(digit + 1) * Math.pow(10, noOfDigits-i);
 			console.log(largerEven+'largerEven');
-			smallerEven=(digit - 1) * Math.pow(10, noOfDigits-i)+parseInt('8'*noOfDigits-i);
+			smallerEven=(digit - 1) * Math.pow(10, noOfDigits-i)+parseInt('8'*(noOfDigits-i));
 			console.log(smallerEven+'smallerEven');
 			if(digit%10!=9){
 				return Math.min(largerEven-input_number, smallerEven-input_number);
