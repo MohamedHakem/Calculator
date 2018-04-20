@@ -24,11 +24,11 @@ function iseven(input_number){
 			console.log(digit + " is not Even , going to work on it !");
 			alert(digit + " is not Even , going to work on it !");
 			largerEven=(digit + 1) * Math.pow(10, noOfDigits-i);
-			console.log(largerEven+'largerEven');
+			console.log((largerEven-input_number)+'largerEven');
 			smallerEven=(digit - 1) * Math.pow(10, noOfDigits-i)+parseInt('8'*(noOfDigits-i));
 			console.log(smallerEven+'smallerEven');
 			if(digit%10!=9){
-				return Math.min((largerEven-input_number), (smallerEven-input_number));
+				return Math.min((largerEven-input_number), (input_number-smallerEven));
 			}
 			return smallerEven;
 	  	}
