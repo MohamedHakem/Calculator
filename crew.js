@@ -22,6 +22,7 @@ function iseven(input_number){
 		digit=input_number/Math.pow(10, noOfDigits-i);
 		if( digit % 2!= 0){
 			console.log(digit + " is not Even , going to work on it !");
+			alert(digit + " is not Even , going to work on it !");
 	  	}else if(i==noOfDigits-1){
 
 	  	}
