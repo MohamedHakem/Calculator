@@ -2,28 +2,31 @@
 javascript for Calculator
 */
 function sbm_form() {
-	nn = document.getElementById('number').value;
-	if (nn == "") {
+	input_number = document.getElementById('number').value;
+	if (input_number == "") {
         	alert("Please Insert Number");
         	return false;
     	}
+	iseven(input_number);
+	
+//end of sabri code
+	alert(input_number);
+  	var resultdiv = document.getElementById("result");
+  	resultdiv.innerText = input_number;
+}
+function iseven(input_number){
+	var noOfDigits = input_number.toString().length;
+
   	//Sabri Code 
 	for(var i=1; i<= noOfDigits;  i++ ){
-		
-	    digit=number/Math.pow(10, noOfDigits-i);
-	  if( digit % 2!= 0){
-		console.log(digit + " is not Even , going to work on it !");
-	  }
-	  else if(i==nOfDigits-1){
+		digit=input_number/Math.pow(10, noOfDigits-i);
+		if( digit % 2!= 0){
+			console.log(digit + " is not Even , going to work on it !");
+	  	}else if(i==nOfDigits-1){
 
-	  }
+	  	}
+	}
 }
-//end of sabri code
-	alert(nn);
-  	var resultdiv = document.getElementById("result");
-  	resultdiv.innerText = nn;
-}
-
 /*
 var number = document.getElementById("number").value;
 
