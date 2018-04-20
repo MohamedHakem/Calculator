@@ -10,7 +10,7 @@ function sbm_form() {
   resultdiv.innerText = nn;
 }
 
-
+/*
 var number = document.getElementById("number").value;
 
 
@@ -30,3 +30,4 @@ for( i=0; i< noOfDigits;  i++ ){
 }
 isEven();
 };
+*/
