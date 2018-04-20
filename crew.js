@@ -9,7 +9,7 @@ function sbm_form() {
     	}
 	//eman function
 	if(isdigit(input_number)){
-	iseven(input_number);
+		iseven(input_number);
 	}
 	
 //end of sabri code
@@ -32,7 +32,7 @@ function iseven(input_number){
 	}
 }
 function isdigit(input_number){
-	if (!input_number.Integer) {
+	if (!isNaN(input_number)) {
         	alert("Please Insert Number");
         	return false;
     	}
