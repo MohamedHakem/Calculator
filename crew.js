@@ -23,8 +23,8 @@ function iseven(input_number){
 		if( digit % 2!= 0){
 			console.log(digit + " is not Even , going to work on it !");
 			alert(digit + " is not Even , going to work on it !");
-			largerEven=digit + 1 * Math.pow(10, noOfDigits-i);
-			smallerEven=digit - 1 * Math.pow(10, noOfDigits-i)+parseInt('8'*noOfDigits-i);
+			largerEven=(digit + 1) * Math.pow(10, noOfDigits-i);
+			smallerEven=(digit - 1) * Math.pow(10, noOfDigits-i)+parseInt('8'*noOfDigits-i);
 			if(digit%10!=9){
 				return Math.min(largerEven-input_number, input_number-smallerEven);
 			}
