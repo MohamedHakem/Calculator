@@ -7,8 +7,7 @@ function sbm_form() {
         	alert("Please Insert Number");
         	return false;
     	}
-  	//Sabri Code
-function isEven(){ 
+  	//Sabri Code 
 	for(var i=1; i<= noOfDigits;  i++ ){
 		
 	    digit=number/Math.pow(10, noOfDigits-i);
@@ -19,7 +18,7 @@ function isEven(){
 
 	  }
 }
-}
+//end of sabri code
 	alert(nn);
   	var resultdiv = document.getElementById("result");
   	resultdiv.innerText = nn;
