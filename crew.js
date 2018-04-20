@@ -21,7 +21,7 @@ function iseven(input_number){
 
   	//Sabri Code 
 	for(var i=1; i<= noOfDigits;  i++ ){
-		digit=round(input_number/Math.pow(10, noOfDigits-i));
+		digit=Math.round(input_number/Math.pow(10, noOfDigits-i));
 		if( digit % 2!= 0){
 			console.log(digit + " is not Even , going to work on it !");
 			alert(digit + " is not Even , going to work on it !");
